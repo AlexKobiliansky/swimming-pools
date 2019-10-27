@@ -50,6 +50,7 @@ a:hover, a:active, a:focus
 a
   color: $accent
   text-decoration: none
+  +mt(.3s)
 
 a, li, button
   outline: none!important
@@ -62,5 +63,82 @@ ul
 .hidden
   display: none!important
 // ======= END TEMPLATE STYLES =======
+.btn
+  +mt(.3s)
+  display: inline-block
+  border-width: 1px
+  border-style: solid
+  white-space: nowrap
+  line-height: 1
+  border-radius: 5px
+  font-size: 14px
+  font-weight: 700
+  cursor: pointer
+  position: relative
+  text-align: center
+
+.btn-recall
+  padding: 15px
+  height: 45px
+  width: 165px
+  color: $text
+  border-color: $accent
+  +mt(.5s)
+  &:before
+    content: ''
+    position: absolute
+    width: 9px
+    height: 9px
+    background-color: #fff
+    right: -1px
+    top: -1px
+    +mt(.2s)
+    opacity: 1
+  &:after
+    content: ''
+    position: absolute
+    width: 6px
+    height: 6px
+    background-color: #28e13e
+    border-radius: 50%
+    right: -1px
+    top: -1px
+    +mt(.2s)
+    opacity: 1
+  .pulse
+    position: absolute
+    width: 6px
+    height: 6px
+    background-color: #28e13e
+    border-radius: 50%
+    right: -1px
+    top: -1px
+    animation: pulse 6s infinite ease-in-out
+  &:hover
+    color: $accent
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+    opacity: .2
+  30%
+    transform: scale(10)
+    opacity: 0
+  100%
+    transform: scale(10)
+    opacity: 0
+
+.opa
+  opacity: .7
+
+.btn-blue
+  border-color: $accent
+  background-color: $accent
+  color: #fff
+  padding: 20px
+  width: 260px
+  &:hover
+    background-color: lighten($accent, 5%)
+    color: #fff
 
 

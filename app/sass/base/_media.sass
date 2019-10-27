@@ -5,15 +5,47 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .intro-wrap
+    h1
+      font-size: 30px
 
 // ≥992px
 +media-breakpoint-down(md)
+  .topline
+    display: none
+  .sub-topline
+    display: none
+
+  .intro-wrap
+    background-image: none
+    height: auto
+
+  .intro
+    background-image: url('../img/bg-intro-mobile.jpg')
+    +bg-cover
+    height: 400px
+
+
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .intro
+    height: 320px
+    background-position-x: 50%
+
+
+@media screen and (max-width: 390px)
+  .intro-wrap-mobile
+    .btn-wrap
+      text-align: center
+      .btn
+        width: 100%
+        margin-bottom: 30px
+      .shop-link
+        margin-left: 0
 
 
 /*==========  Mobile First  ==========*/

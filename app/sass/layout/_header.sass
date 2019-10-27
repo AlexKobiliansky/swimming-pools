@@ -1,0 +1,238 @@
+.main-head
+
+.topline
+  border-bottom: 1px solid #f4f4f4
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 12px
+    padding-bottom: 12px
+  .call
+    font-weight: 700
+    opacity: .8
+    color: $text
+    &:hover
+      color: $accent
+
+.main-mnu
+  li
+    display: inline-block
+    &:last-child
+      a
+        margin-right: 0
+        &:after
+          content: ''
+          position: absolute
+          border: 4px solid transparent
+          border-top: 6px solid $text
+          right: -18px
+          top: 7px
+          opacity: .8
+          +mt(.3s)
+        &:hover
+          &:after
+            border-top-color: $accent
+  a
+    display: inline-block
+    font-size: 14px
+    font-weight: 700
+    color: $text
+    margin-right: 55px
+    opacity: .8
+    position: relative
+    &:hover
+      color: $accent
+
+
+.sub-topline
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 22px
+    padding-bottom: 22px
+  .logo
+    width: 100px
+  .sub-mnu-item
+    font-size: 14px
+    font-weight: 700
+    color: $text
+    opacity: .8
+    &:hover
+      color: $accent
+
+.intro-wrap
+  background-image: url('../img/bg-intro.jpg')
+  +bg-cover
+  height: 400px
+  position: relative
+  h1
+    font-size: 40px
+    margin-bottom: 20px
+    margin-top: 105px
+  .btn-wrap
+    position: absolute
+    left: 0
+    bottom: 0
+  .shop-link
+    font-size: 14px
+    color: $text
+    position: relative
+    font-weight: 700
+    margin-left: 40px
+    &:after
+      content: ''
+      position: absolute
+      border: 3px solid transparent
+      border-left: 5px solid $text
+      right: -17px
+      top: 6px
+      +mt(.3s)
+    &:hover
+      color: $accent
+      &:after
+        border-left-color: $accent
+
+.mobile-top-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 50px
+  .logo
+    width: 100px
+    display: inline-block
+
+.ishome
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    background-color: #fff
+
+.hamburger-inner:before
+  width: 30px
+
+.hamburger-inner:after
+  width: 20px
+
+.hamburger.is-active:hover, .hamburger:hover
+  opacity: 1
+
+.ishome
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+    background-color: #fff
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  width: 40px
+
+
+//mmenu customization
+.mobile-mnu-wrap
+  position: relative
+
+.close-mnu
+  position: absolute
+  right: 20px
+  top: 50px
+  width: 20px
+  height: 19px
+  background-image: url('../img/icons/close-icon.png')
+  +bg-cover
+  z-index: 100
+  cursor: pointer
+
+.mm-menu
+  background-color: #fff
+  .call-item
+    margin-bottom: 30px
+    p
+      margin-bottom: 0
+    a
+      font-weight: 700
+      font-size: 22px
+      margin-bottom: 10px
+      display: inline-block
+  .mail-item
+    position: relative
+    top: -15px
+    p
+      margin-bottom: 10px
+    a
+      font-weight: 700
+
+.mm-panel
+  //padding-top: 50px
+
+.mm-listitem:after
+  display: none
+
+.mm-listitem
+  font-weight: 700
+  &.link-main
+    opacity: .6
+  &.link-shop
+    a
+      padding-top: 20px
+      padding-bottom: 20px
+      position: relative
+      color: $accent
+      &:after
+        content: ''
+        position: absolute
+        border: 3px solid transparent
+        border-left: 5px solid $accent
+        left: 175px
+        top: 27px
+        +mt(.3s)
+  &.link-secondary
+    font-weight: normal
+//end mmenu customization
+
+
+.intro-wrap-mobile
+  position: relative
+  border-top-left-radius: 30px
+  border-top-right-radius: 30px
+  top: -25px
+  background-color: #fff
+  padding-top: 50px
+  border-bottom: 1px solid #e9e9e9
+  padding-bottom: 40px
+  h1
+    font-size: 28px
+  .btn-wrap
+    font-size: 12px
+  .btn
+    font-size: 12px
+    padding: 18px
+    width: 185px
+  .shop-link
+    color: $text
+    position: relative
+    font-weight: 700
+    margin-left: 30px
+    &:after
+      content: ''
+      position: absolute
+      border: 3px solid transparent
+      border-left: 5px solid $text
+      right: -17px
+      top: 5px
+      +mt(.3s)
+
+.intro-items-wrap
+  display: flex
+  justify-content: space-between
+  margin-bottom: 45px
+
+.intro-item
+  width: calc(50% - 15px)
+  &-img
+    margin-bottom: 15px
+  &-desc
+    font-size: 14px
+    span
+      font-weight: 700
+      display: block
+
+
+
+
