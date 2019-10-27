@@ -141,7 +141,26 @@ ul
     background-color: lighten($accent, 5%)
     color: #fff
 
+.section-title
+  font-size: 30px
+  margin-bottom: 20px
+
 .section-title-mobile
   display: none
+
+.more-link
+  position: relative
+  color: $accent
+  &:after
+    content: ''
+    position: absolute
+    border: 3px solid transparent
+    border-left: 5px solid $accent
+    right: -17px
+    top: 8px
+    +mt(.3s)
+  &:hover
+    color: $accent
+    text-decoration: underline
 
 
