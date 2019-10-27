@@ -1,0 +1,48 @@
+.s-services
+  padding-top: 100px
+
+.serv-item
+  border: 1px solid #ececec
+  border-radius: 5px
+  cursor: pointer
+  &-top
+    padding: 28px
+    text-align: center
+  &-img
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+  &-title
+    font-size: 18px
+    font-weight: 700
+    +mt(.3s)
+  &-bottom
+    display: inline-block
+    width: 100%
+    text-align: center
+    font-size: 14px
+    padding: 28px
+    border-top: 1px solid #ececec
+    color: $text
+    span
+      opacity: .7
+      position: relative
+      color: $text
+      +mt(.3s)
+      &:after
+        content: ''
+        position: absolute
+        border: 3px solid transparent
+        border-left: 5px solid $text
+        right: -17px
+        top: 6px
+        +mt(.3s)
+  &:hover
+    .serv-item-title
+      color: $accent
+    .serv-item-bottom
+      span
+        opacity: 1
+        color: $accent
+        &:after
+          border-left-color: $accent

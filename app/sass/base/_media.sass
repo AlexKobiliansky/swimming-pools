@@ -11,6 +11,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-services
+    padding-top: 50px
+
+  .serv-item
+    margin-bottom: 30px
+
+  .intro-wrap-mobile
+    margin-bottom: -25px
+
   .topline
     display: none
   .sub-topline
@@ -32,12 +42,36 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-services
+    .section-title-mobile
+      padding-left: 20px
+
+  .section-title-mobile
+    display: block
+    font-size: 16px
+    font-weight: 700
+    opacity: .7
+    margin-bottom: 30px
+
+  .services-slider
+    margin-left: 20px
+    width: calc(100% - 20px)
+
+  .serv-item
+    margin-right: 30px
+    width: 215px
+
   .intro
     height: 320px
     background-position-x: 50%
 
 
 @media screen and (max-width: 390px)
+
+  .serv-item
+    width: 190px
+
   .intro-wrap-mobile
     .btn-wrap
       text-align: center

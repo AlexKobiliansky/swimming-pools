@@ -45,6 +45,18 @@ $(document).ready(function(){
      */
 
 
+    $('.services-slider').owlCarousel({
+        loop:true,
+        nav: false,
+        items: 1,
+        margin: 0,
+        dots: false,
+        autoHeight: false,
+        navText: ["",""],
+        autoWidth:true,
+    });
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
