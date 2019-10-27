@@ -20,6 +20,18 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-works
+    padding-top: 50px
+    padding-bottom: 20px
+
+  .s-about
+    background-color: #f8fcff
+    padding-top: 40px
+    padding-bottom: 40px
+
+  .about-right
+    padding-bottom: 0
+
   .work-item
     margin-bottom: 30px
 
@@ -51,8 +63,29 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-about
+    .btn-wrap
+      margin-top: 20px
+      text-align: center
+
+  .about-items-wrap
+    flex-direction: column
+    margin-top: 30px
+
+  .about-item
+    width: 100%
+    margin-bottom: 15px
+
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-about
+    p
+      font-size: 14px
+      line-height: 1.5
+    .btn-wrap
+      .btn
+        width: 100%
 
   .works-slider
     margin-left: 20px
