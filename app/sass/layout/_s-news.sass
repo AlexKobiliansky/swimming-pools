@@ -1,0 +1,86 @@
+.s-news
+  padding: 100px 0
+  p
+    margin-bottom: 30px
+  .section-title
+    margin-top: 133px
+
+.news-item
+  +bg-cover
+  position: relative
+  height: 185px
+  border-radius: 5px
+  overflow: hidden
+  color: #fff
+  margin-bottom: 30px
+  &.large
+    height: 400px
+    .news-item-content
+      top: 300px
+    &:hover
+      .news-item-content
+        top: 215px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    +mt(.5s)
+    background-image: url('../img/gradient.png')
+    +bg-cover
+  &-content
+    position: absolute
+    z-index: 2
+    width: 100%
+    height: 100%
+    left: 0
+    top: 85px
+    padding: 15px 22px
+    font-size: 14px
+    line-height: 1.5
+    +mt(.5s)
+  &-title
+    font-weight: 700
+    margin-bottom: 5px
+    max-height: 43px
+    overflow: hidden
+  &-date
+    margin-bottom: 40px
+  &:hover
+    .news-item-content
+      top: 0
+    &:before
+      height: 200%
+
+
+.news-mobile-wrap
+  padding: 0 20px
+
+.newsmob-item
+  display: flex
+  padding-bottom: 20px
+  border-bottom: 1px solid #e9e9e9
+  margin-bottom: 20px
+  &:last-child
+    border-bottom: none
+  &-img
+    +bg-cover
+    width: 185px
+    margin-right: 15px
+    height: 110px
+    border-radius: 5px
+    overflow: hidden
+  &-content
+    width: calc(100% - 200px)
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &-title
+    font-size: 14px
+    font-weight: 700
+    margin-bottom: 5px
+  &-date
+    font-size: 12px
+    opacity: .7
