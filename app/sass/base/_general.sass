@@ -171,4 +171,28 @@ ul
     border-color: $accent
     background-color: $accent
 
+form
+  label
+    display: block
+    margin-bottom: 30px
+  input
+    width: 100%
+    line-height: 1
+    border: 1px solid #cdcdcd
+    border-radius: 5px
+    color: #848484
+    background-color: transparent
+    padding: 16px 25px
+    &::placeholder
+      color: #848484
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .btn
+    width: 100%
+  .help-block
+    display: none!important
+
 

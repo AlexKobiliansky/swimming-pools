@@ -20,6 +20,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .contact-items-wrap
+    margin-bottom: 50px
+
   .s-news
     padding: 50px 0 20px
 
@@ -81,6 +84,52 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .contact-item
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px
+
+  .contacts-mobile-call
+    display: inline-block
+    width: 48%
+    font-size: 18px
+    font-weight: 700
+    color: $text
+    +mt(.3s)
+    margin-bottom: 15px
+
+  .map-wrapper
+    border-radius: 0
+    margin-bottom: 0
+  #map
+    border-radius: 0
+
+  .contact-items-wrap
+    padding: 25px 20px 0
+    position: relative
+    top: -35px
+    border-radius: 30px
+    background-color: #fff
+    z-index: 3
+    margin-bottom: 0
+
+  .s-contacts
+    background-color: #fff
+    padding-top: 0
+    padding-bottom: 0
+    border-bottom: 1px solid #e9e9e9
+    .container
+      padding-left: 0
+      padding-right: 0
+    form
+      display: none
+    .section-title-mobile
+      padding-left: 20px
+      padding-right: 20px
+    .btn
+      width: 100%
+      margin-top: 20px
 
   .s-about
     p
@@ -145,6 +194,11 @@
 
 
 @media screen and (max-width: 390px)
+
+
+
+  .contacts-mobile-call
+    width: 100%
 
   .newsmob-item
     &-img

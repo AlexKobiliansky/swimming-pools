@@ -1,0 +1,85 @@
+.s-contacts
+  background-color: #f8fcff
+  padding: 60px 0
+  .section-title
+    margin-bottom: 15px
+  p
+    margin-bottom: 40px
+
+.contact-item
+  display: inline-block
+  margin-right: 60px
+  &:last-child
+    margin-right: 0
+  &-title
+    font-size: 12px
+    margin-bottom: 10px
+  &-desc
+    font-size: 14px
+    font-weight: 700
+    line-height: 1.5
+    color: $text
+
+.map-wrapper
+  position: relative
+  margin-bottom: 30px
+
+.contacts-mobile-call
+  display: none
+
+#map
+  height: 240px
+  background-color: #eee
+  border-radius: 5px
+  overflow: hidden
+  position: relative
+  +bg-cover
+
+.loader
+  position: absolute
+  top: 0
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+  z-index: -2
+  border-radius: 5px
+
+.loader:after,
+.loader:before
+  box-sizing: border-box
+
+.loader.is-active
+  top: 0
+  opacity: 1
+  z-index: 2
+
+.loader-default:after
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+
+@keyframes blink
+  from
+    opacity: .5
+  to
+    opacity: 1
+
