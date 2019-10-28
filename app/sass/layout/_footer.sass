@@ -1,0 +1,61 @@
+.main-foot
+  padding: 100px 0 50px
+
+.footer-wrap
+  display: flex
+  justify-content: space-between
+
+.foot-item
+  position: relative
+  &:first-child
+    width: 275px
+  &:last-child
+    width: 210px
+
+.foot-call
+  margin-bottom: 30px
+  a
+    display: inline-block
+    font-size: 22px
+    font-weight: 700
+    color: $text
+    margin-bottom: 12px
+    &:hover
+      color: $accent
+  p
+    font-size: 12px
+    opacity: .7
+    margin-bottom: 0
+
+.foot-mail
+  p
+    font-size: 14px
+    opacity: .7
+    margin-bottom: 7px
+  a
+    color: $text
+    font-weight: 700
+    &:hover
+      color: $accent
+
+.foot-item-title
+  font-weight: 700
+  margin-bottom: 20px
+
+.foot-mnu
+  a
+    display: inline-block
+    +mt(0)
+    color: $text
+    opacity: .7
+    margin-bottom: 12px
+    &:hover
+      text-decoration: underline
+      
+.copyright
+  position: absolute
+  bottom: 0
+  right: 0
+  opacity: .7
+  text-align: right
+

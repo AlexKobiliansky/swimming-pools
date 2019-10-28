@@ -20,6 +20,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .main-foot
+    padding-top: 50px
+
+  .foot-item
+    &:first-child
+      display: none
+
   .contact-items-wrap
     margin-bottom: 50px
 
@@ -69,6 +76,25 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .footer-wrap
+    flex-wrap: wrap
+
+  .foot-item
+    width: 50%
+    margin-bottom: 50px
+    &:last-child
+      width: 100%
+      margin-bottom: 0
+      img
+        width: 115px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 17px
+  .copyright
+    position: relative
+    text-align: center
+    font-size: 14px
+
   .s-about
     .btn-wrap
       margin-top: 20px
@@ -84,6 +110,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .foot-item
+    width: 100%
+    margin-bottom: 30px
+    text-align: center
+
+  .foot-mnu
+    a
+      font-size: 14px
+      margin-bottom: 10px
 
   .contact-item
     width: 100%
@@ -122,6 +158,9 @@
     .container
       padding-left: 0
       padding-right: 0
+    .row
+      margin-left: 0
+      margin-right: 0
     form
       display: none
     .section-title-mobile
