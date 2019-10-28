@@ -20,6 +20,45 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .popup-contacts-content
+    //position: relative
+
+  .my-mfp-zoom-contacts.mfp-ready .popup-contacts-content
+    top: 0
+
+  .my-mfp-zoom-contacts
+    &.mfp-removing
+      .popup-contacts-content
+        top: -2000px
+
+  .my-mfp-zoom-contacts
+    .mfp-close
+      display: block
+
+
+  .pcon-map-wrapper
+    display: none
+
+  .pcon-title
+    font-size: 28px
+    margin-bottom: 35px
+    margin-top: 0
+  .pcon-call
+    margin-bottom: 20px
+    a
+      margin-bottom: 5px
+  .pcon-mail
+    margin-bottom: 20px
+
+  .pcon-items-wrap
+    flex-direction: column-reverse
+
+  .pcon-left
+    width: 100%
+    margin-top: 40px
+  .pcon-right
+    width: 100%
+
   .main-foot
     padding-top: 50px
 
@@ -110,6 +149,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .my-mfp-zoom-contacts
+    .mfp-container
+      overflow-y: scroll
 
   .foot-item
     width: 100%

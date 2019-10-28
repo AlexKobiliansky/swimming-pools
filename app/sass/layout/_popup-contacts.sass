@@ -1,0 +1,127 @@
+.popup-contacts
+  position: relative
+  background-color: #fff
+  .topline
+    position: relative
+    z-index: 2
+    background-color: #fff
+
+.popup-contacts-content
+  padding: 35px 0 80px
+  position: absolute
+  top: -1000px
+  width: 100%
+  background-color: #fff
+  transition: all .5s linear
+
+.pcon-title
+  font-size: 40px
+  font-weight: 700
+  margin-bottom: 80px
+  margin-top: 25px
+
+.pcon-call
+  margin-bottom: 30px
+  a
+    display: inline-block
+    font-size: 22px
+    font-weight: 700
+    color: $text
+    margin-bottom: 12px
+    &:hover
+      color: $accent
+  p
+    font-size: 12px
+    opacity: .7
+    margin-bottom: 0
+
+.pcon-mail
+  p
+    font-size: 14px
+    opacity: .7
+    margin-bottom: 7px
+  a
+    color: $text
+    font-weight: 700
+    &:hover
+      color: $accent
+
+.pcon-map-wrapper
+  position: relative
+  margin-bottom: 30px
+
+#pcon-map
+  height: 140px
+  background-color: #eee
+  border-radius: 5px
+  overflow: hidden
+  position: relative
+  +bg-cover
+
+.pcon-items-wrap
+  display: flex
+  justify-content: space-between
+  font-size: 14px
+  .strong
+    font-size: 16px
+    font-weight: 700
+    opacity: 1
+  p
+    opacity: .7
+
+.pcon-left
+  width: 380px
+
+.pcon-right
+  width: 260px
+
+.pcon-item
+  margin-bottom: 5px
+
+.pcon-item-title
+  margin-bottom: 15px
+  opacity: .7
+
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-contacts
+  .mfp-close
+    display: none
+  .mfp-content
+    vertical-align: top
+  .mfp-container
+    padding: 0
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-ready
+    .popup-contacts-content
+      top: 44px
+  &.mfp-removing .zoom-anim-dialog
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-removing
+    .popup-contacts-content
+      top: -2000px
+
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.popup-contacts-link
+  &.is-active
+    a
+      color: $accent
+      &:after
+        border-top-color: $accent!important
+        transform: rotate(-180deg)
+        top: 3px!important
+

@@ -28,6 +28,22 @@
 
 <body class="ishome">
 
+<!-- preloader -->
+<div class="preloader">
+	<div class="sk-cube-grid">
+		<div class="sk-cube sk-cube-1"></div>
+		<div class="sk-cube sk-cube-2"></div>
+		<div class="sk-cube sk-cube-3"></div>
+		<div class="sk-cube sk-cube-4"></div>
+		<div class="sk-cube sk-cube-5"></div>
+		<div class="sk-cube sk-cube-6"></div>
+		<div class="sk-cube sk-cube-7"></div>
+		<div class="sk-cube sk-cube-8"></div>
+		<div class="sk-cube sk-cube-9"></div>
+	</div>
+</div>
+<!-- preloader -->
+
 <div id="page-container">
 	<!-- mobile-mnu -->
 	<nav id="mobile-mnu">
@@ -41,7 +57,7 @@
 				<li class="link-shop"><a href="#0">Интернет-магазин</a></li>
 				<li class="link-secondary"><a href="#0">Условия работы</a></li>
 				<li class="link-secondary"><a href="#0">Портфолио</a></li>
-				<li class="link-secondary"><a href="#0">Контакты</a></li>
+				<li class="link-secondary"><a href="#popup-contacts">Контакты</a></li>
 			</ul>
 
 			<div class="call-item">
@@ -71,7 +87,7 @@
 						<li><a href="#0">Условия работы</a></li>
 						<li><a href="#0">Портфолио</a></li>
 						<li><a href="#0">Дизайн проекты</a></li>
-						<li><a href="#0">Контакты</a></li>
+						<li class="popup-contacts-link"><a href="#popup-contacts">Контакты</a></li>
 					</ul>
 				</nav>
 				<!-- /main-mnu -->
@@ -90,7 +106,7 @@
 				<a href="#0" class="sub-mnu-item">Строительство турецких бань</a>
 				<a href="#0" class="sub-mnu-item">Обслуживание бассейнов</a>
 
-				<a href="#0" class="btn btn-recall">Заказать звонок <span class="pulse"></span></a>
+				<a href="#popup-form" class="btn btn-recall">Заказать звонок <span class="pulse"></span></a>
 			</div>
 		</div>
 
@@ -111,12 +127,12 @@
 				<div class="intro-wrap d-none d-lg-block">
 					<div class="row">
 						<div class="col-lg-5">
-							<h1 class=>Строительство бассейнов под ключ</h1>
+							<h1>Строительство бассейнов под ключ</h1>
 							<p class="opa">На рынке с 2002 года</p>
 						</div>
 					</div>
 					<div class="btn-wrap">
-						<a href="#0" class="btn btn-blue">Рассчитать стоимость</a>
+						<a href="#popup-form" class="btn btn-blue">Рассчитать стоимость</a>
 						<a href="#0" class="shop-link">Интернет-магазин</a>
 					</div>
 				</div>
@@ -142,7 +158,7 @@
 				</div>
 
 				<div class="btn-wrap">
-					<a href="#0" class="btn btn-blue">Рассчитать стоимость</a>
+					<a href="#popup-contacts" class="btn btn-blue">Рассчитать стоимость</a>
 					<a href="#0" class="shop-link">Интернет-магазин</a>
 				</div>
 			</div>
@@ -394,7 +410,7 @@
 						</div>
 
 						<div class="btn-wrap">
-							<a href="#0" class="btn btn-blue">Связаться с нами</a>
+							<a href="#popup-form" class="btn btn-blue">Связаться с нами</a>
 						</div>
 					</div>
 				</div>
@@ -407,7 +423,7 @@
 	<section class="s-news">
 
 		<div class="works-mobile-line d-sm-none">
-			<h2 class="section-title-mobile">Нововсти и статьи</h2>
+			<h2 class="section-title-mobile">Новости и статьи</h2>
 			<a href="#0" class="more-link">Все новости</a>
 		</div>
 
@@ -416,7 +432,7 @@
 			<div class="newsmob-item">
 				<div class="newsmob-item-img" style="background-image: url('img/news-img-1.jpg');"></div>
 				<div class="newsmob-item-content">
-					<div class="newsmob-item-title">Аква скалодром для бассейна</div>
+					<a href="#0" class="newsmob-item-title">Аква скалодром для бассейна</a>
 					<div class="newsmob-item-date">12 мая 2019 г.</div>
 				</div>
 			</div>
@@ -426,7 +442,7 @@
 			<div class="newsmob-item">
 				<div class="newsmob-item-img" style="background-image: url('img/news-img-2.jpg');"></div>
 				<div class="newsmob-item-content">
-					<div class="newsmob-item-title">Новинка 2019 - опция POWERBLOCK</div>
+					<a href="#0" class="newsmob-item-title">Новинка 2019 - опция POWERBLOCK</a>
 					<div class="newsmob-item-date">19 июня 2019 г.</div>
 				</div>
 			</div>
@@ -436,7 +452,7 @@
 			<div class="newsmob-item">
 				<div class="newsmob-item-img" style="background-image: url('img/news-img-3.jpg');"></div>
 				<div class="newsmob-item-content">
-					<div class="newsmob-item-title">Плавающий остров с бассейном</div>
+					<a href="#0" class="newsmob-item-title">Плавающий остров с бассейном</a>
 					<div class="newsmob-item-date">1 сентября 2019 г.</div>
 				</div>
 			</div>
@@ -513,7 +529,6 @@
 
 	<!-- ======= SECTION CONTACTS START ======= -->
 	<section class="s-contacts">
-
 		<div class="container">
 			<div class="section-title-mobile">Контакты</div>
 			<div class="row">
@@ -578,7 +593,7 @@
 						</div>
 						<!-- /contact-item -->
 
-						<a href="#0" class="btn btn-blue d-sm-none">Связаться с нами</a>
+						<a href="#popup-form" class="btn btn-blue d-sm-none">Связаться с нами</a>
 					</div>
 				</div>
 			</div>
@@ -651,9 +666,116 @@
 		</div>
 	</footer>
 	<!-- ======= FOOTER END ======= -->
-
-
 </div>
+
+
+<div class="hidden">
+	<form class="contact-form popup-form" id="popup-form">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Бассейн Сервис">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта Бассейн Сервис">
+		<!-- END Hidden Required Fields -->
+
+		<h3>Оставьте заявку</h3>
+		<p>Мы свяжемся с Вами в ближайшее время</p>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" placeholder="Ваше имя" name="Имя" autocomplete="off" data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$"
+					   data-validation-error-msg="* Укажите ваше имя">
+			</label>
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Мобильный телефон"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"
+					   data-validation-error-msg="* Укажите ваш телефон">
+			</label>
+			<button type="submit" class="btn btn-blue">Отправить</button>
+			<div class="form-notice opa">Нажимая на кнопку "Отправить" вы соглашаетесь на обработку персональных данных</div>
+		</div>
+	</form>
+
+	<div class="popup-form popup-greeting" id="popup-greeting">
+		<img src="img/logo.png" alt="alt" class="logo img-responsive">
+		<h3>Спасибо!</h3>
+		<p>Мы прямо сейчас обрабатываем Ваш запрос и ответим в ближайшие минуты</p>
+	</div>
+
+	<div class="popup-contacts" id="popup-contacts">
+		<div class="topline">
+			<div class="container">
+				<!-- main-mnu -->
+				<nav class="main-mnu">
+					<ul>
+						<li><a href="#0">Условия работы</a></li>
+						<li><a href="#0">Портфолио</a></li>
+						<li><a href="#0">Дизайн проекты</a></li>
+						<li class="popup-contacts-link close-popup-contacts"><a href="#0">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- /main-mnu -->
+
+				<a href="tel:+79109490383" class="call">+7 (910) 949-03-83</a>
+			</div>
+		</div>
+		<div class="popup-contacts-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="pcon-title">Контакты</div>
+						<div class="pcon-call">
+							<a href="tel:+7482311657">+7 (4872) 31-16-57</a>
+							<p>Для звонков из любой точки мира по тарифам вашего мобильного оператора связи</p>
+						</div>
+
+						<div class="pcon-call">
+							<a href="tel:+79109490383" style="margin-bottom: 0;">+7 (910) 949-03-83</a>
+						</div>
+
+						<div class="pcon-mail">
+							<p>Почта:</p>
+							<a href="mailto:basservice@inbox.ru">basservice@inbox.ru</a>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="pcon-map-wrapper">
+							<div class="loader loader-default"></div>
+							<div id="pcon-map" data-att="54.175916" data-long="37.599816" data-zoom="16" style="background-image: url('img/bg-map.jpg');"></div>
+						</div>
+						<div class="pcon-items-wrap">
+							<div class="pcon-left">
+								<div class="pcon-item">
+									<p class="strong">Общество с ограниченной ответственностью «Бассейн Сервис» (ООО «Бассейн Сервис»)</p>
+									<p>ИНН 7107540756   КПП 710701001 <br>ОГРН 1137154001456  ОКПО 24646534</p>
+									<p>Р/с 40702810702040000004 в АО «Альфа-Банк» <br>К/с 30101810200000000593 БИК 044525593  </p>
+									<p>Директор: Башаров Алексей Юрьевич <br>(на основании Устава)</p>
+								</div>
+							</div>
+
+							<div class="pcon-right">
+								<div class="pcon-item">
+									<div class="pcon-item-title">Центральный офис:</div>
+									<p class="strong">300012, г. Тула, пр-кт Ленина, д. 85/7, оф. 213</p>
+								</div>
+
+								<div class="pcon-item">
+									<div class="pcon-item-title">Магазин:</div>
+									<p class="strong">301138, г. Тула, одоевское шоссе, Парковая ул., 7</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
 
 
 <!-- ======= HTML FOR PHOTOSWIPE ======= -->
@@ -694,7 +816,7 @@
 				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
 				<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-				<!-- element will get class pswp__preloader--active when preloader is running -->
+				<!-- element will get class pswp__preloader-active when preloader is running -->
 				<div class="pswp__preloader">
 					<div class="pswp__preloader__icn">
 						<div class="pswp__preloader__cut">

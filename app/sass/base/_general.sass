@@ -137,7 +137,7 @@ ul
   color: #fff
   padding: 20px
   width: 260px
-  &:hover
+  &:hover, &:active, &:focus
     background-color: lighten($accent, 5%)
     color: #fff
 
@@ -194,5 +194,125 @@ form
     width: 100%
   .help-block
     display: none!important
+
+
+//preloader
+.sk-cube-grid
+  width: 4em
+  height: 4em
+  margin: auto
+/*
+ * Spinner positions
+ * 1 2 3
+ * 4 5 6
+ * 7 8 9
+ */
+
+.sk-cube-grid .sk-cube
+  width: 33%
+  height: 33%
+  background-color: $accent
+  float: left
+  animation: sk-cube-grid-scale-delay 1.3s infinite ease-in-out
+
+.sk-cube-grid .sk-cube-1
+  animation-delay: 0.2s
+
+.sk-cube-grid .sk-cube-2
+  animation-delay: 0.3s
+
+.sk-cube-grid .sk-cube-3
+  animation-delay: 0.4s
+
+.sk-cube-grid .sk-cube-4
+  animation-delay: 0.1s
+
+.sk-cube-grid .sk-cube-5
+  animation-delay: 0.2s
+
+.sk-cube-grid .sk-cube-6
+  animation-delay: 0.3s
+
+.sk-cube-grid .sk-cube-7
+  animation-delay: 0s
+
+.sk-cube-grid .sk-cube-8
+  animation-delay: 0.1s
+
+.sk-cube-grid .sk-cube-9
+  animation-delay: 0.2s
+
+@keyframes sk-cube-grid-scale-delay
+  0%, 70%, 100%
+    transform: scale3D(1, 1, 1)
+  35%
+    transform: scale3D(0, 0, 1)
+
+
+.preloader
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 999
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #f8fcff
+//end PRELOADER
+
+.popup-form
+  background-color: #fff
+  display: block
+  width: 100%
+  max-width: 480px
+  padding: 50px 40px
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  h3
+    font-size: 28px
+  p
+    opacity: .7
+    margin-bottom: 25px
+  .form-notice
+    font-size: 12px
+    margin-top: 10px
+  img
+    width: 200px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+
+.popup-greeting
+  text-align: center
+  p
+    margin-bottom: 0
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
+
 
 
