@@ -62,8 +62,61 @@
     &:hover
       color: $accent
 
+
+.ishome
+  .intro-wrap
+    background-image: url('../img/bg-intro.jpg')
+
+.isnohome
+  .intro-wrap
+    height: 340px
+    margin-bottom: 55px
+    h1
+      margin-bottom: 40px
+      margin-top: 60px
+  .intro-items-wrap
+    justify-content: flex-start
+  .intro-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: auto
+    margin-right: 30px
+    &-img
+      width: 57px
+      margin-right: 10px
+      margin-bottom: 0
+    &-desc
+      width: calc(100% - 67px)
+  .intro-img
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+
+.to-mainpage
+  font-size: 16px
+  font-weight: 700
+  color: $text
+  .svg
+    width: 22px
+    height: auto
+    margin-right: 15px
+    position: relative
+    top: -2px
+
+
+
+
+
+
+
+
+
+
+
+
+
 .intro-wrap
-  background-image: url('../img/bg-intro.jpg')
   +bg-cover
   height: 400px
   position: relative

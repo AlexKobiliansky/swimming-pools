@@ -105,10 +105,26 @@
     background-image: none
     height: auto
 
+
+  .isnohome
+    .intro-wrap
+      height: auto
+      h1
+        margin-top: 20px
+      .btn-wrap
+        position: relative
+    .intro-img
+      margin-top: 0
+
+  .ishome
+    .intro
+      background-image: url('../img/bg-intro-mobile.jpg')
+      height: 400px
+
+
+
   .intro
-    background-image: url('../img/bg-intro-mobile.jpg')
     +bg-cover
-    height: 400px
 
 
 
@@ -149,6 +165,27 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .isnohome
+    .intro-wrap
+      .btn-wrap
+        .btn
+          font-size: 12px
+          padding: 18px
+          width: 185px
+        .shop-link
+          font-size: 12px
+          margin-left: 30px
+    .intro-items-wrap
+      flex-wrap: wrap
+      .intro-item
+        width: 100%
+        margin-bottom: 15px
+        &-desc
+          span
+            display: inline-block
+        &:last-child
+          margin-bottom: 0
 
   .my-mfp-zoom-contacts
     .mfp-container
@@ -204,6 +241,9 @@
     .row
       margin-left: 0
       margin-right: 0
+    .contacts-half
+      padding-left: 0
+      padding-right: 0
     form
       display: none
     .section-title-mobile
@@ -270,13 +310,23 @@
     margin-right: 30px
     width: 215px
 
-  .intro
-    height: 320px
-    background-position-x: 50%
+  .ishome
+    .intro
+      height: 320px
+      background-position-x: 50%
 
 
 @media screen and (max-width: 390px)
 
+  .isnohome
+    .intro-wrap
+      .btn-wrap
+        text-align: center
+        .btn
+          width: 100%
+          margin-bottom: 15px
+        .shop-link
+          margin-left: 0
 
 
   .contacts-mobile-call
